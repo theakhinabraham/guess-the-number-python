@@ -1,5 +1,5 @@
-from levels import startGame
-from style import clearScreen, typewrite
+from extra.levels import startGame
+from extra.style import clearScreen, typewrite
 
 
 def preGame():

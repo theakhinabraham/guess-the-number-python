@@ -1,6 +1,5 @@
 import random
-from style import clearScreen, typewrite
-
+from extra.style import clearScreen, typewrite
 
 passed = False
 
