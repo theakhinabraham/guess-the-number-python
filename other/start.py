@@ -1,5 +1,5 @@
-from extra.levels import startGame
-from extra.style import clearScreen, typewrite
+from other.levels import startGame
+from other.style import clearScreen, typewrite
 
 
 def preGame():
@@ -16,6 +16,7 @@ def preGame():
     typewrite("GOBLIN: Hmph! You think you know everything?")
     typewrite("GOBLIN: Okay, I'm gonna prove you wrong. You ready?")
     while True:
+        print()
         typewrite(">>>Enter START to play game or HELP to learn how to play<<<")
         print()
         start_game = input("YOU: ").lower()

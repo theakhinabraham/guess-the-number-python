@@ -1,3 +1,3 @@
-from extra.start import preGame
+from other.start import preGame
 
 preGame()

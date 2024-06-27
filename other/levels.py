@@ -1,17 +1,17 @@
 import random
-from extra.style import clearScreen, typewrite
+from other.style import clearScreen, typewrite
 
 passed = False
 
 def startGame():
+   print()
    typewrite("Loading...")  
-   typewrite("███████████████████████████████████")
+   typewrite("██████████████████████████████████████████████████████████████████████")
+   print()
    global passed
    passed = False
    
    while True:
-    clearScreen()
-
     print("██╗░░░░░███████╗██╗░░░██╗███████╗██╗░░░░░  ░░███╗░░")
     print("██║░░░░░██╔════╝██║░░░██║██╔════╝██║░░░░░  ░████║░░")
     print("██║░░░░░█████╗░░╚██╗░██╔╝█████╗░░██║░░░░░  ██╔██║░░")
@@ -61,7 +61,13 @@ def startGame():
             break
     else:
         break    
-   print("You have failed!")    
+    
+   print("██╗░░░██╗░█████╗░██╗░░░██╗  ███████╗░█████╗░██╗██╗░░░░░███████╗██████╗░██╗") 
+   print("╚██╗░██╔╝██╔══██╗██║░░░██║  ██╔════╝██╔══██╗██║██║░░░░░██╔════╝██╔══██╗██║") 
+   print("░╚████╔╝░██║░░██║██║░░░██║  █████╗░░███████║██║██║░░░░░█████╗░░██║░░██║██║") 
+   print("░░╚██╔╝░░██║░░██║██║░░░██║  ██╔══╝░░██╔══██║██║██║░░░░░██╔══╝░░██║░░██║╚═╝") 
+   print("░░░██║░░░╚█████╔╝╚██████╔╝  ██║░░░░░██║░░██║██║███████╗███████╗██████╔╝██╗") 
+   print("░░░╚═╝░░░░╚════╝░░╚═════╝░  ╚═╝░░░░░╚═╝░░╚═╝╚═╝╚══════╝╚══════╝╚═════╝░╚═╝") 
     
 def level(L, R):
     global passed
@@ -71,7 +77,6 @@ def level(L, R):
     solution = random.randint(L, R)
     
     typewrite("GOBLIN: My secret number is between "+ str(L) +" and " + str(R) + ". " + str(guess_count) + " Guesses Remaining")
-    typewrite("GOBLIN: **Ahem, it's " + str(solution))
     
     while guess_count > 0:
             guess = input("YOU: It is ")
