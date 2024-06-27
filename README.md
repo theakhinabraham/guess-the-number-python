@@ -64,10 +64,9 @@
 # About Evil Goblin's Secret Number Game
 <br>
 <p align="center">
-<video width="100%" height="auto" controls>
-  <source src="other/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  
+https://github.com/theakhinabraham/guess-the-number-python/assets/72644026/4b55c875-b7b2-4912-bd08-409e293df9d9
+
 </p>
 
 <br>
